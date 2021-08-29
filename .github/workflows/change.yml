@@ -21,9 +21,9 @@ jobs:
 
         with:
 
-          find: "DAISY"
+          find: "Daisy X"
 
-          replace: "INERUKI"
+          replace: "Ineruki X"
 
       - name: Create Pull Request
 
