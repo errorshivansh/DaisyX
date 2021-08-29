@@ -21,9 +21,9 @@ jobs:
 
         with:
 
-          find: "Daisy"
+          find: "DAISY_VERSION"
 
-          replace: "Ineruki"
+          replace: "INERUKI_VERSION"
 
       - name: Create Pull Request
 
