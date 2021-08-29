@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,8 +23,8 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-from DaisyX import OWNER_ID
-from DaisyX.services.telethon import tbot as client
+from InerukiX import OWNER_ID
+from InerukiX.services.telethon import tbot as client
 
 # =================== CONSTANT ===================
 

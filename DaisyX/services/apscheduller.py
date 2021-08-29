@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,8 +18,8 @@ from apscheduler.jobstores.redis import RedisJobStore
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pytz import utc
 
-from DaisyX.config import get_str_key
-from DaisyX.utils.logger import log
+from InerukiX.config import get_str_key
+from InerukiX.utils.logger import log
 
 DEFAULT = "default"
 

@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -28,9 +28,9 @@ from pyrogram import filters
 # This plugin is ported from https://github.com/thehamkercat/WilliamButcherBot
 from search_engine_parser import GoogleSearch
 
-from DaisyX.modules.utils.fetch import fetch
-from DaisyX.services.events import register
-from DaisyX.services.pyrogram import pbot as app
+from InerukiX.modules.utils.fetch import fetch
+from InerukiX.services.events import register
+from InerukiX.services.pyrogram import pbot as app
 
 ARQ = "https://thearq.tech/"
 
@@ -271,7 +271,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> @DaisySupport_Official <==="
+        app_details += "\n\n===> @InerukiSupport_Official <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")

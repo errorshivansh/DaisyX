@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,11 +23,11 @@ import aiohttp
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from DaisyX.config import get_str_key
+from InerukiX.config import get_str_key
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+from InerukiX.services.events import register
+from InerukiX.services.telethon import tbot
 
 
 async def is_register_admin(chat, user):

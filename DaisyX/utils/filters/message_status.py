@@ -1,7 +1,7 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
 # Copyright (C) 2019 Aiogram
 #
-# This file is part of DaisyBot.
+# This file is part of InerukiBot.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -19,7 +19,7 @@
 from aiogram import types
 from aiogram.dispatcher.filters import BoundFilter
 
-from DaisyX import dp
+from InerukiX import dp
 
 
 class NotForwarded(BoundFilter):

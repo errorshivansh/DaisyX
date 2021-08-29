@@ -1,8 +1,8 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 # Copyright (C) 2020 Inuka Asith
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -24,10 +24,10 @@ from contextlib import suppress
 from aiogram.utils.exceptions import MessageNotModified
 from babel.dates import format_timedelta
 
-from DaisyX import BOT_ID, bot
-from DaisyX.decorator import register
-from DaisyX.services.redis import redis
-from DaisyX.services.telethon import tbot
+from InerukiX import BOT_ID, bot
+from InerukiX.decorator import register
+from InerukiX.services.redis import redis
+from InerukiX.services.telethon import tbot
 
 from .misc import customise_reason_finish, customise_reason_start
 from .utils.connections import chat_connection
@@ -55,7 +55,7 @@ async def kick_user_cmd(message, chat, user, args, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["kick_DaisyX"])
+        await message.reply(strings["kick_InerukiX"])
         return
 
     elif user_id == message.from_user.id:
@@ -114,7 +114,7 @@ async def mute_user_cmd(message, chat, user, args, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["mute_DaisyX"])
+        await message.reply(strings["mute_InerukiX"])
         return
 
     elif user_id == message.from_user.id:
@@ -192,7 +192,7 @@ async def unmute_user_cmd(message, chat, user, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["unmute_DaisyX"])
+        await message.reply(strings["unmute_InerukiX"])
         return
 
     elif user_id == message.from_user.id:
@@ -227,7 +227,7 @@ async def ban_user_cmd(message, chat, user, args, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["ban_DaisyX"])
+        await message.reply(strings["ban_InerukiX"])
         return
 
     elif user_id == message.from_user.id:
@@ -305,7 +305,7 @@ async def unban_user_cmd(message, chat, user, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["unban_DaisyX"])
+        await message.reply(strings["unban_InerukiX"])
         return
 
     elif user_id == message.from_user.id:

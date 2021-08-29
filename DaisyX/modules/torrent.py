@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -22,8 +22,8 @@ from telethon import events
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from DaisyX.services.mongo import mongodb as db
-from DaisyX.services.telethon import tbot
+from InerukiX.services.mongo import mongodb as db
+from InerukiX.services.telethon import tbot
 
 approved_users = db.approve
 
@@ -70,7 +70,7 @@ async def _(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Daisy found some torrents for you. Take a look 👇",
+        "Ineruki found some torrents for you. Take a look 👇",
         buttons=[
             [
                 Button.inline(
@@ -190,7 +190,7 @@ async def paginate_prevtorrent(event):
     try:
         results = requests.get(url).json()
     except Exception as e:
-        await event.reply("Sorry, Daisy Cant found any torrents for that word")
+        await event.reply("Sorry, Ineruki Cant found any torrents for that word")
         print(e)
         return
     vector = len(results)
@@ -332,7 +332,7 @@ async def torrentstop(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Thanks for using.\n❤️ from [Daisy X](t.me/DaisyXBot) !",
+        "Thanks for using.\n❤️ from [Ineruki X](t.me/InerukiXBot) !",
         link_preview=False,
     )
 

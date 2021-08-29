@@ -1,24 +1,24 @@
 # Clients
 ## Importing Aiogram
 ```python3
-from DaisyX import bot
+from InerukiX import bot
 ```
 
 ## Importing Pyrogram
 ```python3
-from DaisyX.services.pyrogram import pbot
+from InerukiX.services.pyrogram import pbot
 ```
 ## Importing Telethon
 ```python3
-from DaisyX.services.telethon import tbot
+from InerukiX.services.telethon import tbot
 ```
 ## Importing Userbot
 ```python3
-from DaisyX.services.telethonuserbot import ubot
+from InerukiX.services.telethonuserbot import ubot
 ```
 
 # DB
 ## Importing MongoDB
 ```python3
-from DaisyX.services.mongo import mongodb
+from InerukiX.services.mongo import mongodb
 ```

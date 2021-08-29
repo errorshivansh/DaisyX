@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,14 +23,14 @@ import re
 from telethon import Button, events, utils
 from telethon.tl import functions, types
 
-from DaisyX.services.events import register
-from DaisyX.services.sql.filters_sql import (
+from InerukiX.services.events import register
+from InerukiX.services.sql.filters_sql import (
     add_filter,
     get_all_filters,
     remove_all_filters,
     remove_filter,
 )
-from DaisyX.services.telethon import tbot
+from InerukiX.services.telethon import tbot
 
 DELETE_TIMEOUT = 0
 TYPE_TEXT = 0

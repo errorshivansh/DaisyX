@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -20,11 +20,11 @@ from aiogram import types
 from aiogram.dispatcher.handler import SkipHandler
 from sentry_sdk import configure_scope
 
-from DaisyX import BOT_USERNAME, dp
-from DaisyX.config import get_bool_key
-from DaisyX.modules.error import parse_update
-from DaisyX.utils.filters import ALL_FILTERS
-from DaisyX.utils.logger import log
+from InerukiX import BOT_USERNAME, dp
+from InerukiX.config import get_bool_key
+from InerukiX.modules.error import parse_update
+from InerukiX.utils.filters import ALL_FILTERS
+from InerukiX.utils.logger import log
 
 DEBUG_MODE = get_bool_key("DEBUG_MODE")
 ALLOW_F_COMMANDS = get_bool_key("ALLOW_FORWARDS_COMMANDS")
@@ -38,7 +38,7 @@ COMMANDS_ALIASES = {}
 log.info("Filters to load: %s", str(ALL_FILTERS))
 for module_name in ALL_FILTERS:
     log.debug("Importing " + module_name)
-    imported_module = import_module("DaisyX.utils.filters." + module_name)
+    imported_module = import_module("InerukiX.utils.filters." + module_name)
 log.info("Filters loaded!")
 
 

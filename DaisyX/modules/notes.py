@@ -1,8 +1,8 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 # Copyright (C) 2020 Inuka Asith
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -34,11 +34,11 @@ from babel.dates import format_datetime
 from pymongo import ReplaceOne
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 
-from DaisyX import bot
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.services.telethon import tbot
+from InerukiX import bot
+from InerukiX.decorator import register
+from InerukiX.services.mongo import db
+from InerukiX.services.redis import redis
+from InerukiX.services.telethon import tbot
 
 from .utils.connections import chat_connection, set_connected_command
 from .utils.disable import disableable_dec
@@ -766,7 +766,7 @@ __mod_name__ = "Notes"
 
 __help__ = """
 Sometimes you need to save some data, like text or pictures. With notes, you can save any types of Telegram's data in your chats.
-Also notes perfectly working in PM with Daisy.
+Also notes perfectly working in PM with Ineruki.
 
 <b>Available commands:</b>
 - /save (name) (data): Saves the note.
@@ -810,7 +810,7 @@ Every note can contain special settings, for example you can change formatting m
 <code>%PREVIEW</code>: Enables the links preview in saved note
 
 <b>Saving notes from other Marie style bots:</b>
-Daisy can save notes from other bots, just reply /save on the saved message from another bot, saving pictures and buttons supported aswell.
+Ineruki can save notes from other bots, just reply /save on the saved message from another bot, saving pictures and buttons supported aswell.
 
 <b>Retrieving notes without the formatting:</b>
 To retrieve a note without the formatting, use <code>/get (name) raw</code> or <code>/get (name) noformat</code>

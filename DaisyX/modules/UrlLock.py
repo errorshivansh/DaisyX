@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -21,15 +21,15 @@ import asyncio
 from pyrogram import filters
 from pyrogram.errors import RPCError
 
-from DaisyX import BOT_ID
-from DaisyX.db.mongo_helpers.lockurl import add_chat, get_session, remove_chat
-from DaisyX.function.pluginhelpers import (
+from InerukiX import BOT_ID
+from InerukiX.db.mongo_helpers.lockurl import add_chat, get_session, remove_chat
+from InerukiX.function.pluginhelpers import (
     admins_only,
     edit_or_reply,
     get_url,
     member_permissions,
 )
-from DaisyX.services.pyrogram import pbot
+from InerukiX.services.pyrogram import pbot
 
 
 @pbot.on_message(

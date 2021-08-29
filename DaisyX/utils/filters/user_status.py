@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -16,11 +16,11 @@
 from aiogram import types
 from aiogram.dispatcher.filters import BoundFilter
 
-from DaisyX import OPERATORS, dp
-from DaisyX.config import get_int_key
-from DaisyX.modules.utils.language import get_strings_dec
-from DaisyX.modules.utils.user_details import is_user_admin
-from DaisyX.services.mongo import mongodb
+from InerukiX import OPERATORS, dp
+from InerukiX.config import get_int_key
+from InerukiX.modules.utils.language import get_strings_dec
+from InerukiX.modules.utils.user_details import is_user_admin
+from InerukiX.services.mongo import mongodb
 
 
 class IsAdmin(BoundFilter):

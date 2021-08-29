@@ -1,8 +1,8 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 # Copyright (C) 2020 Inuka Asith
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -32,22 +32,22 @@ from aiogram.types.message import ContentType, Message
 from aiogram.utils.callback_data import CallbackData
 from babel.dates import format_timedelta
 
-from DaisyX import dp
-from DaisyX.decorator import register
-from DaisyX.modules.utils.connections import chat_connection
-from DaisyX.modules.utils.language import get_strings, get_strings_dec
-from DaisyX.modules.utils.message import (
+from InerukiX import dp
+from InerukiX.decorator import register
+from InerukiX.modules.utils.connections import chat_connection
+from InerukiX.modules.utils.language import get_strings, get_strings_dec
+from InerukiX.modules.utils.message import (
     InvalidTimeUnit,
     convert_time,
     get_args,
     need_args_dec,
 )
-from DaisyX.modules.utils.restrictions import ban_user, kick_user, mute_user
-from DaisyX.modules.utils.user_details import get_user_link, is_user_admin
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import bredis, redis
-from DaisyX.utils.cached import cached
-from DaisyX.utils.logger import log
+from InerukiX.modules.utils.restrictions import ban_user, kick_user, mute_user
+from InerukiX.modules.utils.user_details import get_user_link, is_user_admin
+from InerukiX.services.mongo import db
+from InerukiX.services.redis import bredis, redis
+from InerukiX.utils.cached import cached
+from InerukiX.utils.logger import log
 
 cancel_state = CallbackData("cancel_state", "user_id")
 
@@ -384,7 +384,7 @@ Antiflood allows you to take action on users that send more than x messages in a
 - /antiflood off: Disables Antiflood
 - /setflood (limit): Sets flood limit
 
-Replace (limit) with any integer, should be less than 200. When setting up, Daisy would ask you to send expiration time, if you dont understand what this expiration time for? User who sends specified limit of messages consecutively within this TIME, would be kicked, banned whatever the action is. if you dont want this TIME, wants to take action against those who exceeds specified limit without mattering TIME INTERVAL between the messages. you can reply to question with 0
+Replace (limit) with any integer, should be less than 200. When setting up, Ineruki would ask you to send expiration time, if you dont understand what this expiration time for? User who sends specified limit of messages consecutively within this TIME, would be kicked, banned whatever the action is. if you dont want this TIME, wants to take action against those who exceeds specified limit without mattering TIME INTERVAL between the messages. you can reply to question with 0
 
 <b>Configuring the time:</b>
 <code>2m</code> = 2 minutes
@@ -393,7 +393,7 @@ Replace (limit) with any integer, should be less than 200. When setting up, Dais
 
 <b>Example:</b>
 Me: <code>/setflood 10</code>
-Daisy: <code>Please send expiration time [...]</code>
+Ineruki: <code>Please send expiration time [...]</code>
 Me: <code>5m</code> (5 minutes)
 DONE!
 

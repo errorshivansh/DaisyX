@@ -1,7 +1,7 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -40,14 +40,14 @@ from babel.dates import format_timedelta
 from captcha.image import ImageCaptcha
 from telethon.tl.custom import Button
 
-from DaisyX import BOT_ID, BOT_USERNAME, bot, dp
-from DaisyX.config import get_str_key
-from DaisyX.decorator import register
-from DaisyX.services.apscheduller import scheduler
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.services.telethon import tbot
-from DaisyX.stuff.fonts import ALL_FONTS
+from InerukiX import BOT_ID, BOT_USERNAME, bot, dp
+from InerukiX.config import get_str_key
+from InerukiX.decorator import register
+from InerukiX.services.apscheduller import scheduler
+from InerukiX.services.mongo import db
+from InerukiX.services.redis import redis
+from InerukiX.services.telethon import tbot
+from InerukiX.stuff.fonts import ALL_FONTS
 
 from ..utils.cached import cached
 from .utils.connections import chat_connection

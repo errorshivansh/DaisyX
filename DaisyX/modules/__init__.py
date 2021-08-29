@@ -1,8 +1,8 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 # Copyright (C) 2020 Inuka Asith
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -20,14 +20,14 @@
 import os
 import sys
 
-from DaisyX.utils.logger import log
+from InerukiX.utils.logger import log
 
 LOADED_MODULES = []
 MOD_HELP = {}
 
 
 def list_all_modules() -> list:
-    modules_directory = "DaisyX/modules"
+    modules_directory = "InerukiX/modules"
 
     all_modules = []
     for module_name in os.listdir(modules_directory):

@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,8 +18,8 @@
 
 from countryinfo import CountryInfo
 
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot as borg
+from InerukiX.services.events import register
+from InerukiX.services.telethon import tbot as borg
 
 
 @register(pattern="^/country (.*)")
@@ -111,7 +111,7 @@ Sub Region:- {sub}
 Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
-Gathered By Daisy X.</b>
+Gathered By Ineruki X.</b>
 """
 
     await borg.send_message(

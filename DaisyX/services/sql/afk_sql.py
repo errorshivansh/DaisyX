@@ -1,11 +1,11 @@
-# Reconfigured with AioGram by DaisyDevTeam
+# Reconfigured with AioGram by InerukiDevTeam
 # Timer added by MissJuliaRobot
 import threading
 import time
 
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
-from DaisyX.services.sql import BASE, SESSION
+from InerukiX.services.sql import BASE, SESSION
 
 
 class AFK(BASE):

@@ -1,8 +1,8 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 # Copyright (C) 2020 Inuka Asith
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -21,8 +21,8 @@ import re
 
 from aiogram.dispatcher.filters import CommandStart
 
-from DaisyX.decorator import register
-from DaisyX.services.mongo import db
+from InerukiX.decorator import register
+from InerukiX.services.mongo import db
 
 from .utils.connections import chat_connection
 from .utils.disable import disableable_dec

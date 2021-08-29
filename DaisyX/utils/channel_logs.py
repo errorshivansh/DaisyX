@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -15,9 +15,9 @@
 
 import html
 
-from DaisyX import bot
-from DaisyX.config import get_int_key
-from DaisyX.utils.logger import log
+from InerukiX import bot
+from InerukiX.config import get_int_key
+from InerukiX.utils.logger import log
 
 
 async def channel_log(msg, info_log=True):

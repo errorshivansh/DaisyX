@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,8 +23,8 @@ import lyricsgenius
 from pyrogram import filters
 from tswift import Song
 
-from DaisyX.config import get_str_key
-from DaisyX.services.pyrogram import pbot
+from InerukiX.config import get_str_key
+from InerukiX.services.pyrogram import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 

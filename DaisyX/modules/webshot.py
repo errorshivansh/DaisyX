@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from DaisyX.services.pyrogram import pbot as Daisy
+from InerukiX.services.pyrogram import pbot as Ineruki
 
 
-@Daisy.on_message(filters.command("webshot", ["."]))
+@Ineruki.on_message(filters.command("webshot", ["."]))
 async def webshot(clien, message):
     try:
         user = message.command[1]

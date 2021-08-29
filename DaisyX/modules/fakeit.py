@@ -1,5 +1,5 @@
 #    Copyright (C) @chsaiujwal 2020-2021
-#    Edited by TeamDaisyX
+#    Edited by TeamInerukiX
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -19,8 +19,8 @@ from faker import Faker
 from faker.providers import internet
 from telethon import events
 
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX.services.telethon import tbot
+from InerukiX.function.telethonbasics import is_admin
+from InerukiX.services.telethon import tbot
 
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
@@ -59,7 +59,7 @@ async def _(event):
             with open("FRIDAYOT.jpg", "wb") as f:
                 f.write(response.content)
 
-        captin = f"Fake Image powered by @DaisySupport_Official."
+        captin = f"Fake Image powered by @InerukiSupport_Official."
         fole = "FRIDAYOT.jpg"
         await tbot.send_file(event.chat_id, fole, caption=captin)
         await event.delete()

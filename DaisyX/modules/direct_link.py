@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -22,7 +22,7 @@ from random import choice
 import requests
 from bs4 import BeautifulSoup
 
-from DaisyX.decorator import register
+from InerukiX.decorator import register
 
 from .utils.disable import disableable_dec
 from .utils.message import get_arg

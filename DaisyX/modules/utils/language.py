@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,17 +18,17 @@ import os
 import yaml
 from babel.core import Locale
 
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from InerukiX.services.mongo import db
+from InerukiX.services.redis import redis
+from InerukiX.utils.logger import log
 
 LANGUAGES = {}
 
 log.info("Loading localizations...")
 
-for filename in os.listdir("DaisyX/localization"):
+for filename in os.listdir("InerukiX/localization"):
     log.debug("Loading language file " + filename)
-    with open("DaisyX/localization/" + filename, "r", encoding="utf8") as f:
+    with open("InerukiX/localization/" + filename, "r", encoding="utf8") as f:
         lang = yaml.load(f, Loader=yaml.CLoader)
 
         lang_code = lang["language_info"]["code"]

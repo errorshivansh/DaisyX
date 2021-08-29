@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,9 +23,9 @@ import tldextract
 from telethon import events, types
 from telethon.tl import functions
 
-import DaisyX.services.sql.urlblacklist_sql as urlsql
-from DaisyX.services.events import register
-from DaisyX.services.telethon import tbot
+import InerukiX.services.sql.urlblacklist_sql as urlsql
+from InerukiX.services.events import register
+from InerukiX.services.telethon import tbot
 
 
 async def can_change_info(message):
@@ -203,7 +203,7 @@ async def _(event):
 
 
 __help__ = """
-<b> Daisy's filters are the blacklist too </b>
+<b> Ineruki's filters are the blacklist too </b>
  - /addfilter [trigger] Select action: blacklists the trigger
  - /delfilter [trigger] : stop blacklisting a certain blacklist trigger
  - /filters: list all active blacklist filters

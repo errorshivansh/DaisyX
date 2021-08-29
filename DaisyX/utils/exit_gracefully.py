@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -16,8 +16,8 @@
 import os
 import signal
 
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from InerukiX.services.redis import redis
+from InerukiX.utils.logger import log
 
 
 def exit_gracefully(signum, frame):

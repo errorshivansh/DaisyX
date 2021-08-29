@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# Inerukixmusic (Telegram bot project )
 # Copyright (C) 2021  Inukaasith
 
 # This program is free software: you can redistribute it and/or modify
@@ -32,9 +32,9 @@ from pyrogram.types import Message
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from DaisyX.function.inlinehelper import arq
-from DaisyX.function.pluginhelpers import get_text, progress
-from DaisyX.services.pyrogram import pbot as Client
+from InerukiX.function.inlinehelper import arq
+from InerukiX.function.pluginhelpers import get_text, progress
+from InerukiX.services.pyrogram import pbot as Client
 
 dl_limit = 0
 
@@ -51,7 +51,7 @@ async def ytmusic(client, message: Message):
     global dl_limit
     if dl_limit >= 4:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Ineruki's server busy due to too many downloads, try again after sometime."
         )
         return
     pablo = await client.send_message(
@@ -181,7 +181,7 @@ async def jssong(_, message):
         return
     if dl_limit >= 3:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Ineruki's server busy due to too many downloads, try again after sometime."
         )
         return
     if is_downloading:
@@ -230,7 +230,7 @@ async def deezsong(_, message):
         return
     if dl_limit >= 3:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Ineruki's server busy due to too many downloads, try again after sometime."
         )
         return
     is_downloading = True
@@ -269,7 +269,7 @@ async def ytmusic(client, message: Message):
     global dl_limit
     if dl_limit >= 4:
         await message.reply_text(
-            "Daisy s server busy due to too many downloads, try again after sometime."
+            "Ineruki s server busy due to too many downloads, try again after sometime."
         )
         return
     urlissed = get_text(message)

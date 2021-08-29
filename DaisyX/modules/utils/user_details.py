@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,10 +23,10 @@ from aiogram.types import CallbackQuery, Message
 from aiogram.utils.exceptions import BadRequest, ChatNotFound, Unauthorized
 from telethon.tl.functions.users import GetFullUserRequest
 
-from DaisyX import OPERATORS, bot
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import bredis
-from DaisyX.services.telethon import tbot
+from InerukiX import OPERATORS, bot
+from InerukiX.services.mongo import db
+from InerukiX.services.redis import bredis
+from InerukiX.services.telethon import tbot
 
 from .language import get_string
 from .message import get_arg
@@ -273,7 +273,7 @@ async def get_user_by_text(message, text: str):
         # If username matches entity's text
         if text in entity.get_text(message.text):
             if entity.type == "mention":
-                # This one entity is comes with mention by username, like @rDaisyBot
+                # This one entity is comes with mention by username, like @rInerukiBot
                 return await get_user_by_username(text)
             elif entity.type == "text_mention":
                 # This one is link mention, mostly used for users without an username

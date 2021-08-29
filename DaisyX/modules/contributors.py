@@ -1,6 +1,6 @@
 # Copyright (C) 2021 ProgrammingError
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,7 +18,7 @@
 import github  # pyGithub
 from pyrogram import filters
 
-from DaisyX.services.pyrogram import pbot as client
+from InerukiX.services.pyrogram import pbot as client
 
 
 @client.on_message(filters.command("contributors") & ~filters.edited)
@@ -26,9 +26,9 @@ async def give_cobtribs(c, m):
     g = github.Github()
     co = ""
     n = 0
-    repo = g.get_repo("TeamDaisyX/DaisyX")
+    repo = g.get_repo("TeamInerukiX/InerukiX")
     for i in repo.get_contributors():
         n += 1
         co += f"{n}. [{i.login}](https://github.com/{i.login})\n"
-    t = f"**DaisyX Contributors**\n\n{co}"
+    t = f"**InerukiX Contributors**\n\n{co}"
     await m.reply(t, disable_web_page_preview=True)

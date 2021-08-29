@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -37,12 +37,12 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from DaisyX import bot
-from DaisyX.decorator import register
-from DaisyX.services.events import register as Daisy
-from DaisyX.services.pyrogram import pbot
-from DaisyX.services.telethon import tbot
-from DaisyX.services.telethonuserbot import ubot
+from InerukiX import bot
+from InerukiX.decorator import register
+from InerukiX.services.events import register as Ineruki
+from InerukiX.services.pyrogram import pbot
+from InerukiX.services.telethon import tbot
+from InerukiX.services.telethonuserbot import ubot
 
 from .utils.disable import disableable_dec
 from .utils.language import get_strings_dec
@@ -124,7 +124,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-@Daisy(pattern="^/searchsticker (.*)")
+@Ineruki(pattern="^/searchsticker (.*)")
 async def _(event):
     input_str = event.pattern_match.group(1)
     combot_stickers_url = "https://combot.org/telegram/stickers?q="
@@ -142,7 +142,7 @@ async def _(event):
     await event.reply(reply)
 
 
-@Daisy(pattern="^/packinfo$")
+@Ineruki(pattern="^/packinfo$")
 async def _(event):
     approved_userss = approved_users.find({})
     for ch in approved_userss:
@@ -197,7 +197,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-DEFAULTUSER = "DaisyX"
+DEFAULTUSER = "InerukiX"
 FILLED_UP_DADDY = "Invalid pack selected."
 
 
@@ -210,7 +210,7 @@ async def get_sticker_emoji(event):
     return final_emoji
 
 
-@Daisy(pattern="^/kang ?(.*)")
+@Ineruki(pattern="^/kang ?(.*)")
 async def _(event):
     if not event.is_reply:
         await event.reply("PLease, Reply To A Sticker / Image To Add It Your Pack")
@@ -227,8 +227,8 @@ async def _(event):
     userid = event.sender_id
     first_name = user.first_name
     packname = f"{first_name}'s Sticker Vol.{pack}"
-    packshortname = f"DaisyX_stickers_{userid}"
-    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Daisy steal it")
+    packshortname = f"InerukiX_stickers_{userid}"
+    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Ineruki steal it")
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Stickers.png"
     file = await event.client.download_file(reply_message.media)
@@ -237,7 +237,7 @@ async def _(event):
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await ubot.upload_file(file, file_name=file_ext_ns_ion)
         packname = f"{first_name}'s Animated Sticker Vol.{pack}"
-        packshortname = f"DaisyX_animated_{userid}"
+        packshortname = f"InerukiX_animated_{userid}"
     elif not is_message_image(reply_message):
         await kanga.edit("Oh no.. This Message type is invalid")
         return
@@ -395,7 +395,7 @@ async def _(event):
     os.system("rm -rf *.webp")
 
 
-@Daisy(pattern="^/rmkang$")
+@Ineruki(pattern="^/rmkang$")
 async def _(event):
     try:
         if not event.is_reply:

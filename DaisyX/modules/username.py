@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -19,9 +19,9 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
-from DaisyX.services.events import register as Daisy
-from DaisyX.services.telethon import tbot
-from DaisyX.services.telethonuserbot import ubot
+from InerukiX.services.events import register as Ineruki
+from InerukiX.services.telethon import tbot
+from InerukiX.services.telethonuserbot import ubot
 
 
 async def is_register_admin(chat, user):
@@ -54,7 +54,7 @@ async def silently_send_message(conv, text):
     return response
 
 
-@Daisy(pattern="^/namehistory ?(.*)")
+@Ineruki(pattern="^/namehistory ?(.*)")
 async def _(event):
 
     if event.fwd_from:

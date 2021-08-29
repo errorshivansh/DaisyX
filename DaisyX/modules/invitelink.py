@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamInerukiX
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,8 +18,8 @@
 
 from pyrogram import filters
 
-from DaisyX.function.pluginhelpers import admins_only
-from DaisyX.services.pyrogram import pbot
+from InerukiX.function.pluginhelpers import admins_only
+from InerukiX.services.pyrogram import pbot
 
 __HELP__ = """
 Classic filters are just like marie's filter system. If you still like that kind of filter system

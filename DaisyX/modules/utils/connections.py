@@ -1,4 +1,4 @@
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -14,10 +14,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 from aiogram.utils.exceptions import Unauthorized
 
-from DaisyX.modules.utils.user_details import is_user_admin
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.cached import cached
+from InerukiX.modules.utils.user_details import is_user_admin
+from InerukiX.services.mongo import db
+from InerukiX.services.redis import redis
+from InerukiX.utils.cached import cached
 
 
 async def get_connected_chat(

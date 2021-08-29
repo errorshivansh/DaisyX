@@ -1,5 +1,5 @@
 #    Copyright (C) 2020-2021 by @InukaAsith
-#    This programme is a part of Daisy TG bot project
+#    This programme is a part of Ineruki TG bot project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -28,11 +28,11 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from DaisyX import BOT_ID
+from InerukiX import BOT_ID
 
-# from DaisyX import OWNER_ID as SUDO_USERS
-from DaisyX.services.pyrogram import pbot
-from DaisyX.services.sql import forceSubscribe_sql as sql
+# from InerukiX import OWNER_ID as SUDO_USERS
+from InerukiX.services.pyrogram import pbot
+from InerukiX.services.sql import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -140,7 +140,7 @@ def _check_member(client, message):
                         )
                     except ChatAdminRequired:
                         sent_message.edit(
-                            "❗ **Daisy is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                            "❗ **Ineruki is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                         )
                     except RPCError:
                         return
@@ -216,7 +216,7 @@ def config(client, message):
 
 __help__ = """
 <b>ForceSubscribe:</b>
-- Daisy can mute members who are not subscribed your channel until they subscribe
+- Ineruki can mute members who are not subscribed your channel until they subscribe
 - When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 <b>Setup</b>
 1) First of all add me in the group as admin with ban users permission and in the channel as admin.

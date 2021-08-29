@@ -1,6 +1,6 @@
-# Copyright (C) 2021 Red-Aura & TeamDaisyX & HamkerCat
+# Copyright (C) 2021 Red-Aura & TeamInerukiX & HamkerCat
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ineruki (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -27,11 +27,11 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
-from DaisyX import BOT_ID
-from DaisyX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
-from DaisyX.function.inlinehelper import arq
-from DaisyX.function.pluginhelpers import admins_only, edit_or_reply
-from DaisyX.services.pyrogram import pbot as daisyx
+from InerukiX import BOT_ID
+from InerukiX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
+from InerukiX.function.inlinehelper import arq
+from InerukiX.function.pluginhelpers import admins_only, edit_or_reply
+from InerukiX.services.pyrogram import pbot as daisyx
 
 translator = google_translator()
 
@@ -82,20 +82,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Daisy AI Already Activated In This Chat")
+            await lel.edit("Ineruki AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Ineruki AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Daisy AI Was Not Activated In This Chat")
+            await lel.edit("Ineruki AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Ineruki AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -138,12 +138,12 @@ async def hmm(client, message):
     if chat_id in en_chats:
         test = msg
         test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("Ineruki", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
+        response = response.replace("Aco", "Ineruki")
+        response = response.replace("aco", "Ineruki")
 
         pro = response
         try:
@@ -196,14 +196,14 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("Ineruki", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
-        response = response.replace("Luna", "Daisy")
-        response = response.replace("luna", "Daisy")
+        response = response.replace("Aco", "Ineruki")
+        response = response.replace("aco", "Ineruki")
+        response = response.replace("Luna", "Ineruki")
+        response = response.replace("luna", "Ineruki")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -270,11 +270,11 @@ async def inuka(client, message):
 
     # Kang with the credits bitches @InukaASiTH
     test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("Ineruki", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Ineruki")
+    response = response.replace("aco", "Ineruki")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -288,7 +288,7 @@ async def inuka(client, message):
 
 
 @daisyx.on_message(
-    filters.regex("Daisy|daisy|DaisyX|daisyx|Daisyx")
+    filters.regex("Ineruki|daisy|InerukiX|daisyx|Inerukix")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -344,10 +344,10 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("Ineruki", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Ineruki")
+    response = response.replace("aco", "Ineruki")
 
     pro = response
     if not "en" in lan and not lan == "":

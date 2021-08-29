@@ -1,4 +1,4 @@
-# Copyright (C) 2021 TheHamkerCat & TeamDaisyX
+# Copyright (C) 2021 TheHamkerCat & TeamInerukiX
 
 # Ported some parts From WilliamButcherBot.
 # Pokedex Inline Credit Red-Aura[Madepranav]
@@ -53,10 +53,10 @@ from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
 
-from DaisyX.config import get_str_key
-from DaisyX.function.inlinehelper import *
-from DaisyX.function.pluginhelpers import fetch, json_prettify
-from DaisyX.services.pyrogram import pbot as app
+from InerukiX.config import get_str_key
+from InerukiX.function.inlinehelper import *
+from InerukiX.function.pluginhelpers import fetch, json_prettify
+from InerukiX.services.pyrogram import pbot as app
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
 TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
@@ -91,7 +91,7 @@ __help__ = """
 <i> I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
 
 <b>Syntax</b>
-   @DaisyXBot [command] [query]
+   @InerukiXBot [command] [query]
 
 <b> Commands Available</b>
 - alive - Check Bot's Stats.
@@ -135,7 +135,7 @@ __HELP__ = """
 `I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.`
 
    >> Syntax <<
-@DaisyXBot [command] [query]
+@InerukiXBot [command] [query]
 
    >> Commands Available <<
 - **alive** - __Check Bot's Stats.__
@@ -661,7 +661,7 @@ async def inline_query_handler(client, query):
         Time Zones:- {tom}
         Top Level Domain:- {lanester}
         wikipedia:- {wiki}</b>
-        Gathered By Daisy X.</b>
+        Gathered By Ineruki X.</b>
         """
             results.append(
                 InlineQueryResultArticle(
@@ -927,7 +927,7 @@ async def inline_query_handler(client, query):
                 + app_link
                 + "'>View in Play Store</a>"
             )
-            app_details += "\n\n===> @DaisySupport_Official <==="
+            app_details += "\n\n===> @InerukiSupport_Official <==="
             rip.append(
                 InlineQueryResultArticle(
                     title=f"Datails of {app_name}",

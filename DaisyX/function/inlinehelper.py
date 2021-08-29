@@ -40,11 +40,11 @@ from pyrogram.types import (
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
 
-from DaisyX import BOT_USERNAME, OWNER_ID
-from DaisyX.config import get_str_key
-from DaisyX.function.pluginhelpers import convert_seconds_to_minutes as time_convert
-from DaisyX.function.pluginhelpers import fetch
-from DaisyX.services.pyrogram import pbot
+from InerukiX import BOT_USERNAME, OWNER_ID
+from InerukiX.config import get_str_key
+from InerukiX.function.pluginhelpers import convert_seconds_to_minutes as time_convert
+from InerukiX.function.pluginhelpers import fetch
+from InerukiX.services.pyrogram import pbot
 
 ARQ_API = get_str_key("ARQ_API", required=True)
 ARQ_API_KEY = ARQ_API
@@ -104,12 +104,12 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/DaisyXbot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/InerukiXbot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[DaisyX✨](https://github.com/TeamDaisyX):**
+**[InerukiX✨](https://github.com/TeamInerukiX):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
