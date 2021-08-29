@@ -85,7 +85,9 @@ async def get_start_func(message, strings, edit=False):
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/InerukiXUpdates"),
+        InlineKeyboardButton(
+            strings["btn_channel"], url="https://t.me/InerukiXUpdates"
+        ),
         InlineKeyboardButton(
             strings["btn_group"], url="https://t.me/InerukiSupport_Official"
         ),
