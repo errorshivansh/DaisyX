@@ -24,15 +24,15 @@ from aiogram.contrib.fsm_storage.redis import RedisStorage2
 from InerukiX.config import get_bool_key, get_int_key, get_list_key, get_str_key
 from InerukiX.services.telethon import tbot
 from InerukiX.utils.logger import log
-from InerukiX.versions import DAISY_VERSION
+from InerukiX.versions import INERUKI_VERSION
 
 log.info("----------------------")
 log.info("|      Ineruki X      |")
 log.info("----------------------")
-log.info("Version: " + DAISY_VERSION)
+log.info("Version: " + INERUKI_VERSION)
 
 if get_bool_key("DEBUG_MODE") is True:
-    DAISY_VERSION += "-debug"
+    INERUKI_VERSION += "-debug"
     log.setLevel(logging.DEBUG)
     log.warn(
         "! Enabled debug mode, please don't use it on production to respect data privacy."
