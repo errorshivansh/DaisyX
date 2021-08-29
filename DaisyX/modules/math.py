@@ -1,4 +1,4 @@
-# Written by Inukaasith for the Ineruki project
+# Written by errorshivansh for the Ineruki project
 # This file is part of InerukiXBot (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify

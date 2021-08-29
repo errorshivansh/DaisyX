@@ -3,7 +3,7 @@
 # Copyright (C) 2020 Jeepeo
 #
 # This file was a  part of Hitsuki (Telegram Bot)
-# Modified by Inukaasith for InerukiX
+# Modified by errorshivansh for InerukiX
 
 
 # This program is free software: you can redistribute it and/or modify
