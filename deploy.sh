@@ -3,7 +3,7 @@ echo "
 *********** STARTING DEPLOY ***********
 
 INERUKIX v2 -Base Aiogram
-(C) 2020-2021 by @TEAMINERUKIX
+(C) 2020-2021 by @errorshivanshX
 Support Chat is @INERUKISUPPORT_OFFICIAL.
 
 ***************************************
@@ -51,7 +51,7 @@ INERUKIX. Deployed Successfully
  ******************* v0.0.1 ** 
 
 Thanks for deploying InerukiX
-(C) 2020-2021 by @TEAMINERUKIX
+(C) 2020-2021 by @errorshivanshX
 Support Chat is @INERUKISUPPORT_OFFICIAL.
 =++---------------------------------------------++=
                        Greetings from dev team :)
